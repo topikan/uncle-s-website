@@ -1,0 +1,192 @@
+<div class="popup-booking">
+	<div class="popup-booking__overlay"></div>
+	<div class="popup-booking__body">
+		<button class="popup-booking__close" aria-label="Закрыть">
+			<span></span>
+		</button>
+		<div class="popup-booking__wrapper">
+			<div class="popup-booking__header">
+				<h2 class="popup-booking__title">
+					Расчёт стоимости праздника
+				</h2>
+				<div class="popup-booking__current-step">
+					Шаг 1 из 4
+				</div>
+				<div class="popup-booking__steps">
+					<div class="popup-booking__step popup-booking__step--active">
+						<div class="popup-booking__step-circle">
+							1
+						</div>
+						<div class="popup-booking__step-line"></div>
+					</div>
+					<div class="popup-booking__step">
+						<div class="popup-booking__step-circle">
+							2
+						</div>
+						<div class="popup-booking__step-line"></div>
+					</div>
+					<div class="popup-booking__step">
+						<div class="popup-booking__step-circle">
+							3
+						</div>
+						<div class="popup-booking__step-line"></div>
+					</div>
+					<div class="popup-booking__step">
+						<div class="popup-booking__step-circle">
+							4
+						</div>
+					</div>
+				</div>
+
+				<div class="popup-booking__summary">
+					<div class="popup-booking__summary-item">
+						<div class="popup-booking__summary-label">
+							Тариф
+						</div>
+						<div class="popup-booking__summary-value summary-tariff">
+							—
+						</div>
+					</div>
+					<div class="popup-booking__summary-item">
+						<div class="popup-booking__summary-label">
+							Дата
+						</div>
+						<div class="popup-booking__summary-value summary-date">
+							—
+						</div>
+					</div>
+					<div class="popup-booking__summary-item">
+						<div class="popup-booking__summary-label">
+							Стоимость
+						</div>
+						<div class="popup-booking__summary-value summary-price">
+							0 ₽
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup-booking__screens">
+				<div class="popup-booking__screen popup-booking__screen--active">
+					<h3 class="popup-booking__screen-title">Выберите тариф</h3>
+					<div class="popup-booking__tariffs">
+						<button class="popup-booking__tariff" data-id="1" data-tariff="Базовый" data-price="59000" data-duration="3">
+							<div class="popup-booking__tariff-info">
+								<div class="popup-booking__tariff-name">
+									Базовый
+								</div>
+								<div class="popup-booking__tariff-description">
+									3 часа, до 15 гостей.
+								</div>
+							</div>
+							<div class="popup-booking__tariff-price">
+								59 000 ₽
+							</div>
+						</button>
+						<button class="popup-booking__tariff" data-id="2" data-tariff="Комфорт" data-price="69000" data-duration="4">
+							<div class="popup-booking__tariff-info">
+								<div class="popup-booking__tariff-name">
+									Комфорт
+								</div>
+								<div class="popup-booking__tariff-description">
+									4 часа, до 20 гостей.
+								</div>
+							</div>
+							<div class="popup-booking__tariff-price">
+								69 000 ₽
+							</div>
+						</button>
+						<button class="popup-booking__tariff" data-id="3" data-tariff="Супер" data-price="79000" data-duration="5">
+							<div class="popup-booking__tariff-info">
+								<div class="popup-booking__tariff-name">
+									Комфорт +
+								</div>
+								<div class="popup-booking__tariff-description">
+									5 часов, до 30 гостей.
+								</div>
+							</div>
+							<div class="popup-booking__tariff-price">
+								79 000 ₽
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class="popup-booking__screen">
+					<div class="popup-booking__calendar-wrapper">
+						<div class="popup-booking__calendar-left">
+							<h3 class="popup-booking__screen-title">Выберите дату</h3>
+							<div class="popup-booking__calendar"></div>
+						</div>
+						<div class="popup-booking__time">
+							<h4 class="popup-booking__time-title">
+								Выберите время
+							</h4>
+							<div class="popup-booking__time-list">
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="popup-booking__screen">
+					<h3 class="popup-booking__screen-title">Дополнительные услуги</h3>
+					<div class="popup-booking__services">
+						<!-- Список услуг рендерится в popup.js -->
+					</div>
+				</div>
+				<div class="popup-booking__screen">
+					<h3 class="popup-booking__screen-title">Контактные данные</h3>
+					<div class="popup-booking__form">
+						<label class="popup-booking__field">
+							<span class="popup-booking__field-label">Имя</span>
+							<input
+								type="text"
+								class="popup-booking__input"
+								name="name"
+								placeholder="Как к вам обращаться"
+								autocomplete="name"
+							/>
+							<span class="popup-booking__field-error"></span>
+						</label>
+						<label class="popup-booking__field">
+							<span class="popup-booking__field-label">Телефон</span>
+							<input
+								type="tel"
+								class="popup-booking__input"
+								name="phone"
+								placeholder="+7 (___) ___-__-__"
+								autocomplete="tel"
+							/>
+							<span class="popup-booking__field-error"></span>
+						</label>
+						<label class="popup-booking__field">
+							<span class="popup-booking__field-label">Комментарий</span>
+							<textarea
+								class="popup-booking__textarea"
+								name="comment"
+								placeholder="Необязательно"
+							></textarea>
+						</label>
+					</div>
+					<div class="popup-booking__success">
+						<div class="popup-booking__success-icon">✓</div>
+						<div class="popup-booking__success-title">Заявка отправлена!</div>
+						<div class="popup-booking__success-text">
+							Мы свяжемся с вами в ближайшее время для подтверждения.
+							Если заметили ошибку в данных — можно сразу оформить новую заявку.
+						</div>
+						<button type="button" class="popup-booking__success-restart">
+							Оформить новую заявку
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="popup-booking__bottom">
+				<button class="popup-booking__back" disabled>
+					Назад
+				</button>
+				<button class="popup-booking__next" disabled>
+					Продолжить
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
