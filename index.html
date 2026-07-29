@@ -3,11 +3,13 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<link rel="icon" type="image/svg+xml" href="/uncle-s-website/favicon.svg" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Сайт для дядь Ромы</title>
-  <script type="module" crossorigin src="/uncle-s-website/assets/index-BF2mVbID.js"></script>
-  <link rel="stylesheet" crossorigin href="/uncle-s-website/assets/index-DOlQ69Df.css">
+  <script type="module" crossorigin src="/assets/main-J4F-CkUb.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/popup-Cxw2uEoo.js">
+  <link rel="stylesheet" crossorigin href="/assets/popup-BN5n78Pg.css">
+  <link rel="stylesheet" crossorigin href="/assets/main-BApzTZSb.css">
 </head>
 
 <body>
@@ -15,11 +17,10 @@
 		<header class="header">
 			<div class="header__container">
 				<a href='#' class="header__logo">
-					<div class="header__logo-cnt"><img src="/uncle-s-website/assets/logo-VgYxVgqQ.png" alt="Логотип" class="header__logo-image"></div>
-					<span class="header__logo-title">Недетский <span class="header__logo-accent">Праздник</span></span>
+					<div class="header__logo-cnt"><img src="/assets/logo-xBDe11Cb.png" alt="Недетский Праздник" class="header__logo-image"></div>
 				</a>
 				<div class="header__location">
-					<a href="#" class="header__link">
+					<a href="#" class="header__link map-popup-open" role="button" aria-haspopup="dialog">
 						<img src="data:image/svg+xml,%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Transformed%20by:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='800px'%20height='800px'%20viewBox='-4%200%2032%2032'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20xmlns:sketch='http://www.bohemiancoding.com/sketch/ns'%20fill='%23ffffff'%20stroke='%23ffffff'%3e%3cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'/%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cg%20id='SVGRepo_iconCarrier'%3e%3ctitle%3elocation%3c/title%3e%3cdesc%3eCreated%20with%20Sketch%20Beta.%3c/desc%3e%3cdefs%3e%3c/defs%3e%3cg%20id='Page-1'%20stroke='none'%20stroke-width='1'%20fill='none'%20fill-rule='evenodd'%20sketch:type='MSPage'%3e%3cg%20id='Icon-Set'%20sketch:type='MSLayerGroup'%20transform='translate(-104.000000,%20-411.000000)'%20fill='%23ffffff'%3e%3cpath%20d='M116,426%20C114.343,426%20113,424.657%20113,423%20C113,421.343%20114.343,420%20116,420%20C117.657,420%20119,421.343%20119,423%20C119,424.657%20117.657,426%20116,426%20L116,426%20Z%20M116,418%20C113.239,418%20111,420.238%20111,423%20C111,425.762%20113.239,428%20116,428%20C118.761,428%20121,425.762%20121,423%20C121,420.238%20118.761,418%20116,418%20L116,418%20Z%20M116,440%20C114.337,440.009%20106,427.181%20106,423%20C106,417.478%20110.477,413%20116,413%20C121.523,413%20126,417.478%20126,423%20C126,427.125%20117.637,440.009%20116,440%20L116,440%20Z%20M116,411%20C109.373,411%20104,416.373%20104,423%20C104,428.018%20114.005,443.011%20116,443%20C117.964,443.011%20128,427.95%20128,423%20C128,416.373%20122.627,411%20116,411%20L116,411%20Z'%20id='location'%20sketch:type='MSShapeGroup'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="Иконка геолокации" class="header__location-icon">
 						<div class="header__location-links">
 							<p class="header__location-link">Краснодар</p>
@@ -40,7 +41,7 @@
 								<p>Банкетная зона</p>
 							</div>
 							<div class="main__item">
-								<img src="/uncle-s-website/assets/bear-DbQQsscy.svg" alt="#">
+								<img src="/assets/bear-DbQQsscy.svg" alt="#">
 								<p>Игровая зона для детей</p>
 							</div>
 							<div class="main__item">
@@ -49,7 +50,7 @@
 							</div>
 						</div>
 						<div class="main__buttons main__actions">
-							<a href="#" class="main__action main__action-primary main__link">Видео-экскурсия</a>
+							<a href="#video" class="main__action main__action-primary main__link">Видео-экскурсия</a>
 						</div>
 						<div class="main__advantages">
 							<div class="main__advantages-item">
@@ -57,7 +58,7 @@
 								<p>площадь</p>
 							</div>
 							<div class="main__advantages-item main__advantages-item-center">
-								<p class="main__advantages-title">до 60</p>
+								<p class="main__advantages-title">до 65</p>
 								<p>гостей</p>
 							</div>
 							<div class="main__advantages-item">
@@ -69,27 +70,21 @@
 				</div>
 			</section>
 	</div>
-	<section class="page__video video">
+	<section class="page__video video" id="video">
 		<div class="video__container">
 			<div class="video__wrapper">
-				<video class="video__player" poster="/uncle-s-website/assets/video-preview-DTLw2sZ1.png" controlsList="nodownload">
-					<source src="/uncle-s-website/assets/tour-gVpClCRK.mp4" type="video/mp4">
+				<video class="video__player" poster="/assets/video-preview-vDjDmOFq.png" controlsList="nodownload">
+					<source src="/assets/tour-Bw7IKcWk.mp4" type="video/mp4">
 				</video>
 				<button class="video__play">
 					<svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M44 88C68.3005 88 88 68.3005 88 44C88 19.6995 68.3005 0 44 0C19.6995 0 0 19.6995 0 44C0 68.3005 19.6995 88 44 88ZM33 24V64L65 44L33 24Z" fill="#3c281b" />
 					</svg>
 				</button>
-				<div class="video__content">
-					<h2 class="video__title">Видеоэкскурсия</h2>
-					<p class="video__text">
-						Познакомьтесь с пространством
-					</p>
-				</div>
 			</div>
 		</div>
 	</section>
-	<section class="page__gallery gallery">
+	<section class="page__gallery gallery" id="gallery">
 		<div class="gallery__container">
 			<div class="gallery__heading stage-heading">
 				<h2 class="gallery__heading-title stage-heading__title">Галерея</h2>
@@ -135,7 +130,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="page__features features">
+	<section class="page__features features" id="features">
 		<div class="features__container">
 			<div class="features__heading stage-heading">
 				<h2 class="features__heading-title stage-heading__title">Преимущества</h2>
@@ -151,13 +146,13 @@
 							<div class="compact__content">
 								<div class="compact__image features__image"><img src="data:image/svg+xml,%3c?xml%20version='1.0'%20?%3e%3csvg%20id='Layer_1'%20style='enable-background:new%200%200%2064%2064;'%20version='1.1'%20viewBox='0%200%2064%2064'%20xml:space='preserve'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cstyle%20type='text/css'%3e%20.st0{fill:none;stroke:%23D8A47C;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}%20%3c/style%3e%3cg%3e%3cline%20class='st0'%20x1='41.07'%20x2='41.07'%20y1='43.92'%20y2='59.17'/%3e%3cellipse%20class='st0'%20cx='41.07'%20cy='60.61'%20rx='10.48'%20ry='2.39'/%3e%3cg%3e%3cpath%20class='st0'%20d='M54.21,33.9c-0.14,0.39-0.29,0.78-0.47,1.15'/%3e%3cpath%20class='st0'%20d='M51.42,38.58c-2.55,2.83-6.24,4.6-10.35,4.6c-7.2,0-13.12-5.45-13.85-12.46c-0.05-0.49-0.08-0.97-0.08-1.47%20l1.02-19.14h17.93l5.46,6.65l2.61-3.18l0.84,15.67c0,0.46-0.02,0.92-0.07,1.37'/%3e%3cline%20class='st0'%20x1='12.21'%20x2='13.13'%20y1='1'%20y2='1'/%3e%3cpath%20class='st0'%20d='M16.56,1h14.51l0.49,9.11h-3.4l-1.02,19.14c0,0.5,0.03,0.98,0.08,1.47c-2.43,2.09-5.6,3.35-9.06,3.35%20c-7.69,0-13.93-6.23-13.93-13.93L5.27,1h3.56'/%3e%3cline%20class='st0'%20x1='18.17'%20x2='18.17'%20y1='34.81'%20y2='50.06'/%3e%3cellipse%20class='st0'%20cx='18.17'%20cy='51.5'%20rx='10.48'%20ry='2.39'/%3e%3c/g%3e%3cpath%20class='st0'%20d='M27.56,24.51l3.98-2.16c2.1-1.14,4.63-1.08,6.67,0.16l0,0c2.06,1.25,4.6,1.3,6.7,0.14l0.25-0.14%20c2.23-1.23,4.94-1.09,7.04,0.36l2.39,1.65'/%3e%3cpath%20class='st0'%20d='M4.65,16.2l3.43-2.16c1.81-1.14,3.99-1.08,5.76,0.16l0,0c1.78,1.25,3.97,1.3,5.79,0.14l0.22-0.14%20c1.93-1.23,4.26-1.09,6.08,0.36l2.06,1.65'/%3e%3cg%3e%3cpath%20class='st0'%20d='M59.77,5.28c0,1.06-0.39,2.01-1.04,2.74l-2.62,3.19l-1.94,2.37l-2.61,3.18l-5.46-6.65l-1.71-2.09%20c-0.65-0.73-1.05-1.68-1.05-2.74c0-2.26,1.84-4.1,4.11-4.1s4.11,1.84,4.11,4.1c0-2.26,1.84-4.1,4.1-4.1%20C57.92,1.18,59.77,3.02,59.77,5.28z'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="#"></div>
 								<h3 class="compact__title  features__title">Не только детский</h3>
-								<div class="compact__text  features__text">Есть развлечения для взрослых: караоке, бильярд, PS5 и другое.</div>
+								<div class="compact__text  features__text">Есть развлечения для взрослых: караоке, бильярд, приставка Steam с топовыми играми и другое.</div>
 								<span class="compact__star"></span>
 							</div>
 						</div>
 						<div class="compact__item">
 							<div class="compact__content">
-								<div class="compact__image features__image"><img src="/uncle-s-website/assets/bear-DbQQsscy.svg" alt="#"></div>
+								<div class="compact__image features__image"><img src="/assets/bear-DbQQsscy.svg" alt="#"></div>
 								<h3 class="compact__title features__title">Не только взрослый</h3>
 								<div class="compact__text features__text">Уютные игровые зоны для детей всех возрастов.</div>
 								<span class="compact__star"></span>
@@ -348,7 +343,7 @@
 									<div class="full__information">
 										<div class="full__title features__title">Не только детский</div>
 										<div class="full__text features__text">Караоке, бильярд, киккер,
-											PS5 и lounge-зона для взрослых.</div>
+											приставка Steam с топовыми играми и lounge-зона для взрослых.</div>
 									</div>
 								</div>
 							</div>
@@ -423,7 +418,7 @@
 			<div class="features__bottom-decor"></div>
 		</div>
 	</section>
-	<section class="page__compare compare">
+	<section class="page__compare compare" id="compare">
 		<div class="compare__container">
 			<div class="compare__heading stage-heading">
 				<h2 class="compare__heading-title stage-heading__title">Сравнение</h2>
@@ -471,7 +466,7 @@
 						</div>
 						<div class="compare__right-item compare__item">
 							<img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3e%3cpath%20fill='%2356beb7'%20d='M235.1%20386.3c-5.7%200-11.1-2.4-14.9-6.6l-104.1-116c-7.4-8.2-6.7-20.9%201.5-28.2%208.2-7.4%2020.9-6.7%2028.2%201.5l86.8%2096.8%20131.6-199.1c6.1-9.2%2018.5-11.7%2027.7-5.7%209.2%206.1%2011.7%2018.5%205.7%2027.7L251.8%20377.4c-3.4%205.2-9%208.5-15.2%208.9-.5%200-1%20.1-1.5.1z'/%3e%3c/svg%3e" alt="#">
-							<p>Караоке, бильярд, PS5 - взрослые отдыхают</p>
+							<p>Караоке, бильярд, приставка Steam - взрослые отдыхают</p>
 						</div>
 						<div class="compare__right-item compare__item">
 							<img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3e%3cpath%20fill='%2356beb7'%20d='M235.1%20386.3c-5.7%200-11.1-2.4-14.9-6.6l-104.1-116c-7.4-8.2-6.7-20.9%201.5-28.2%208.2-7.4%2020.9-6.7%2028.2%201.5l86.8%2096.8%20131.6-199.1c6.1-9.2%2018.5-11.7%2027.7-5.7%209.2%206.1%2011.7%2018.5%205.7%2027.7L251.8%20377.4c-3.4%205.2-9%208.5-15.2%208.9-.5%200-1%20.1-1.5.1z'/%3e%3c/svg%3e" alt="#">
@@ -496,10 +491,10 @@
 		</div>
 		</div>
 	</section>
-	<section class="page__pricing pricing">
+	<section class="page__pricing pricing" id="pricing">
 		<div class="pricing__container">
-			<h2 class="pricing__heading-title stage-heading__title">Цены</h2>
 			<div class="pricing__heading stage-heading">
+				<h2 class="pricing__heading-title stage-heading__title">Цены</h2>
 				<p class="pricing__heading-subtitle stage-heading__subtitle">
 					Рассчитайте
 					стоимость
@@ -515,7 +510,7 @@
 						</div>
 						<div class="plan-card__time">3 часа</div>
 						<div class="plan-card__price">
-							59 000 ₽
+							69 000 ₽
 						</div>
 						<div class="plan-card__desc">
 							Оптимально для малышей
@@ -530,7 +525,7 @@
 						</div>
 						<div class="plan-card__time">4 часа</div>
 						<div class="plan-card__price">
-							69 000 ₽
+							83 000 ₽
 						</div>
 						<div class="plan-card__desc">
 							Самый популярный вариант
@@ -545,7 +540,7 @@
 						</div>
 						<div class="plan-card__time">5 часов</div>
 						<div class="plan-card__price">
-							79 000 ₽
+							93 000 ₽
 						</div>
 						<div class="plan-card__desc">
 							Для больших праздников и вечеринок
@@ -579,7 +574,7 @@
 								<span class="summary-pricing__guests">до 20 гостей</span>
 							</div>
 							<div class="summary-pricing__price">
-								69 000 ₽
+								83 000 ₽
 							</div>
 						</div>
 						<div class="summary-pricing__right">
@@ -591,6 +586,141 @@
 			</div>
 		</div>
 	</section>
+	<section class="page__faq faq" id="faq">
+		<div class="faq__container">
+			<div class="faq__heading stage-heading">
+				<h2 class="faq__heading-title stage-heading__title">Вопросы и ответы</h2>
+				<p class="faq__heading-subtitle stage-heading__subtitle">Всё, что нужно знать<br> заранее</p>
+			</div>
+
+			<div class="faq__panels">
+				<div class="faq__panel faq__panel-active" data-faq-panel="booking">
+					<div class="faq__item">
+						<h3 class="faq__question">Можно ли принести свою еду и напитки?</h3>
+						<div class="faq__answer">
+							<p>Да. Это абсолютно бесплатно.</p>
+						</div>
+					</div>
+					<div class="faq__item">
+						<h3 class="faq__question">Есть ли скрытые платежи?</h3>
+						<div class="faq__answer">
+							<p>Нет, все элементы пространства включены в стоимость.</p>
+						</div>
+					</div>
+					<div class="faq__item">
+						<h3 class="faq__question">Что такое технический час?</h3>
+						<div class="faq__answer">
+							<p>Это время для подготовки праздника: доставка и выкладка блюд, подготовка фотозоны, подарка и др.</p>
+						</div>
+					</div>
+					<div class="faq__item">
+						<h3 class="faq__question">Можно ли продлить праздник?</h3>
+						<div class="faq__answer">
+							<p>Да, если после вас нет другого бронирования.</p>
+						</div>
+					</div>
+					<div class="faq__item">
+						<h3 class="faq__question">Как происходит бронирование и нужна ли предоплата?</h3>
+						<div class="faq__answer">
+							<p>Временное бронирование происходит онлайн. Полностью дата бронируется после подписания договора и внесения предоплаты.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="faq__panel" data-faq-panel="party" hidden>
+					<div class="faq__item">
+						<h3 class="faq__question">Можно ли пригласить своего ведущего, аниматора или фотографа?</h3>
+						<div class="faq__answer">
+							<p>Да, без ограничений.</p>
+						</div>
+					</div>
+					<div class="faq__item">
+						<h3 class="faq__question">Можно ли заказать этих специалистов у вас?</h3>
+						<div class="faq__answer">
+							<p>Да, мы поможем подобрать проверенных специалистов.</p>
+						</div>
+					</div>
+					<div class="faq__item">
+						<h3 class="faq__question">Сколько гостей можно пригласить?</h3>
+						<div class="faq__answer">
+							<p>До 65 гостей. Если планируется больше — уточните возможность при бронировании.</p>
+						</div>
+					</div>
+					<div class="faq__item">
+						<h3 class="faq__question">Можно ли украсить зал самостоятельно?</h3>
+						<div class="faq__answer">
+							<p>Да, это бесплатно.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="faq__panel" data-faq-panel="space" hidden>
+					<div class="faq__item">
+						<h3 class="faq__question">Будут ли в помещении посторонние люди?</h3>
+						<div class="faq__answer">
+							<p>Нет. Всё пространство только для вашей компании.</p>
+						</div>
+					</div>
+					<div class="faq__item">
+						<h3 class="faq__question">Что находится в пространстве?</h3>
+						<div class="faq__answer">
+							<p>Банкетная зона, игровая, сцена, фотозона, lounge-зона и мини-спальня.</p>
+						</div>
+					</div>
+					<div class="faq__item">
+						<h3 class="faq__question">Есть ли парковка?</h3>
+						<div class="faq__answer">
+							<p>Да, рядом всегда есть парковочные места.</p>
+						</div>
+					</div>
+					<div class="faq__item">
+						<h3 class="faq__question">Для какого возраста подходит пространство?</h3>
+						<div class="faq__answer">
+							<p>Комфортно детям примерно от 1 до 10 лет и взрослым любого возраста.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="faq__panel" data-faq-panel="change" hidden>
+					<div class="faq__item">
+						<h3 class="faq__question">Можно ли перенести дату?</h3>
+						<div class="faq__answer">
+							<p>Да, при наличии свободного времени.</p>
+						</div>
+					</div>
+					<div class="faq__item">
+						<h3 class="faq__question">Что делать, если праздник отменился?</h3>
+						<div class="faq__answer">
+							<p>Свяжитесь с нами как можно раньше — предложим оптимальное решение.</p>
+						</div>
+					</div>
+					<div class="faq__item">
+						<h3 class="faq__question">За сколько дней лучше бронировать?</h3>
+						<div class="faq__answer">
+							<p>Чем раньше, тем больше выбор удобных дат и времени.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="faq__slider" aria-label="Категории вопросов">
+				<button class="faq__slider-button faq__slider-button-prev" type="button" aria-label="Предыдущая категория">
+					<span aria-hidden="true">←</span>
+				</button>
+				<div class="faq__category-viewport">
+					<div class="faq__category-track">
+						<button class="faq__category faq__category-active" type="button" data-faq-category="booking"> Стоимость и бронирование</button>
+						<button class="faq__category" type="button" data-faq-category="party"> Организация праздника</button>
+						<button class="faq__category" type="button" data-faq-category="space"> Пространство</button>
+						<button class="faq__category" type="button" data-faq-category="change"> Изменение бронирования</button>
+					</div>
+				</div>
+				<button class="faq__slider-button faq__slider-button-next" type="button" aria-label="Следующая категория">
+					<span aria-hidden="true">→</span>
+				</button>
+			</div>
+			<p class="faq__slider-counter" aria-live="polite">01 / 04</p>
+		</div>
+	</section>
 	</main>
 	<footer class="footer">
 		<div class="footer__container">
@@ -599,8 +729,7 @@
 
 				<div class="footer__brand">
 					<a href="#" class="footer__logo">
-						<img src="/uncle-s-website/assets/logo-VgYxVgqQ.png" alt="Логотип" class="footer__logo-image">
-						<span class="footer__logo-title">Недетский <span class="footer__logo-accent">Праздник</span></span>
+						<img src="/assets/logo-xBDe11Cb.png" alt="Недетский Праздник" class="footer__logo-image">
 					</a>
 					<p class="footer__tagline">
 						Пространство праздников для детей и взрослых в Краснодаре
@@ -631,6 +760,8 @@
 							</svg>
 						</a>
 					</div>
+					<p class="footer__warning">Instagram*
+						*Meta Platforms Inc. признана экстремистской организацией, её деятельность запрещена на территории Российской Федерации.</p>
 				</div>
 
 				<nav class="footer__nav">
@@ -640,21 +771,27 @@
 						<li><a href="#features" class="footer__link">Что входит</a></li>
 						<li><a href="#compare" class="footer__link">Сравнение тарифов</a></li>
 						<li><a href="#pricing" class="footer__link">Тарифы и цены</a></li>
+						<li><a href="#faq" class="footer__link">Вопросы и ответы</a></li>
 					</ul>
 				</nav>
 
 				<div class="footer__contacts">
 					<p class="footer__title">Контакты</p>
-					<a href="tel:+79990000000" class="footer__contact">
+					<a href="tel:+78612063333" class="footer__contact">
 						<svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M5 4h3.2l1.4 4.5-2 1.6a12.6 12.6 0 0 0 5.3 5.3l1.6-2 4.5 1.4V18a2 2 0 0 1-2.2 2C10.6 19.6 4.4 13.4 4 7.2 3.9 5.9 4.3 4.6 5 4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
 						</svg>
-						+7 (999) 000-00-00
+						<span>+7 (861) <span class="footer__contact-highlight">206-33-33</span></span>
 					</a>
-					<a href="#" class="footer__contact">
+					<button type="button" class="footer__contact footer__contact-map map-popup-open" aria-haspopup="dialog">
 						<img src="data:image/svg+xml,%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Transformed%20by:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='800px'%20height='800px'%20viewBox='-4%200%2032%2032'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20xmlns:sketch='http://www.bohemiancoding.com/sketch/ns'%20fill='%23ffffff'%20stroke='%23ffffff'%3e%3cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'/%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cg%20id='SVGRepo_iconCarrier'%3e%3ctitle%3elocation%3c/title%3e%3cdesc%3eCreated%20with%20Sketch%20Beta.%3c/desc%3e%3cdefs%3e%3c/defs%3e%3cg%20id='Page-1'%20stroke='none'%20stroke-width='1'%20fill='none'%20fill-rule='evenodd'%20sketch:type='MSPage'%3e%3cg%20id='Icon-Set'%20sketch:type='MSLayerGroup'%20transform='translate(-104.000000,%20-411.000000)'%20fill='%23ffffff'%3e%3cpath%20d='M116,426%20C114.343,426%20113,424.657%20113,423%20C113,421.343%20114.343,420%20116,420%20C117.657,420%20119,421.343%20119,423%20C119,424.657%20117.657,426%20116,426%20L116,426%20Z%20M116,418%20C113.239,418%20111,420.238%20111,423%20C111,425.762%20113.239,428%20116,428%20C118.761,428%20121,425.762%20121,423%20C121,420.238%20118.761,418%20116,418%20L116,418%20Z%20M116,440%20C114.337,440.009%20106,427.181%20106,423%20C106,417.478%20110.477,413%20116,413%20C121.523,413%20126,417.478%20126,423%20C126,427.125%20117.637,440.009%20116,440%20L116,440%20Z%20M116,411%20C109.373,411%20104,416.373%20104,423%20C104,428.018%20114.005,443.011%20116,443%20C117.964,443.011%20128,427.95%20128,423%20C128,416.373%20122.627,411%20116,411%20L116,411%20Z'%20id='location'%20sketch:type='MSShapeGroup'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e" class="footer__contact-icon" alt="">
-						Краснодар, Северная x Передовая
-					</a>
+						<span>Краснодар, ул. Передовая 36</span>
+					</button>
+					<div class="footer__requisites" aria-label="Реквизиты индивидуального предпринимателя">
+						<p>ИП Казимов Роман Александрович</p>
+						<p><span>ИНН</span> 071604947457</p>
+						<p><span>ОГРН/ОГРНИП</span> 321237500380802</p>
+					</div>
 					<div class="footer__contact footer__contact-static">
 						<img src="data:image/svg+xml,%3csvg%20width='56'%20height='56'%20viewBox='0%200%2056%2056'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='28'%20cy='28'%20r='23'%20stroke='%23cf9e75'%20stroke-width='5'%20/%3e%3cpath%20d='M28%2015V28L37%2037'%20stroke='%23cf9e75'%20stroke-width='5'%20stroke-linecap='butt'%20stroke-linejoin='miter'%20/%3e%3c/svg%3e" class="footer__contact-icon" alt="">
 						Ежедневно, 10:00–23:00
@@ -666,16 +803,34 @@
 
 			<div class="footer__bottom">
 				<p class="footer__copyright">© 2026 Недетский Праздник. Все права защищены.</p>
-				<a href="#" class="footer__policy">Политика конфиденциальности</a>
+				<div class="footer__bottom-links">
+					<a href="/rules.html" class="footer__policy">Правила посещения</a>
+					<a href="/privacy-policy.html" class="footer__policy">Политика в отношении обработки персональных данных</a>
+				</div>
 			</div>
 
 		</div>
 	</footer>
-	<a href="tel:+79990000000" class="call-button" aria-label="Позвонить">
+	<a href="tel:+78612063333" class="call-button" aria-label="Позвонить">
 		<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.75-.25 1.02l-2.2 2.2Z" fill="currentColor"/>
+			<path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.75-.25 1.02l-2.2 2.2Z" fill="currentColor" />
 		</svg>
 	</a>
+	<div class="map-popup" id="mapPopup" hidden>
+		<div class="map-popup__overlay"></div>
+		<div class="map-popup__body">
+			<button class="map-popup__close" aria-label="Закрыть">
+				<span></span>
+			</button>
+			<div class="map-popup__header">
+				<h3 class="map-popup__title">Как нас найти</h3>
+				<a class="map-popup__address map-popup-open" role="button" aria-haspopup="dialog">Краснодар, ул. Передовая, 36</a>
+			</div>
+			<div class="map-popup__map">
+				<iframe class="map-popup__iframe" data-src="https://yandex.ru/map-widget/v1/?text=Краснодар%2C%20ул.%20Передовая%2C%2036&z=17" width="100%" height="100%" frameborder="0"></iframe>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
