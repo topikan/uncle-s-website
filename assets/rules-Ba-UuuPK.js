@@ -1,0 +1,1 @@
+import{t as e}from"./popup-C-U5-0tQ.js";fetch(`./popup-booking.html`).then(e=>e.text()).then(t=>{document.body.insertAdjacentHTML(`beforeend`,t),e()});
